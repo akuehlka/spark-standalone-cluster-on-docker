@@ -113,13 +113,13 @@ function buildImages() {
       --build-arg build_date="${BUILD_DATE}" \
       --build-arg spark_version="${SPARK_VERSION}" \
       -f docker/spark-master/Dockerfile \
-      -t spark-master:${SPARK_VERSION} .
+      -t w3s/spark-master:${SPARK_VERSION} .
 
     docker build \
       --build-arg build_date="${BUILD_DATE}" \
       --build-arg spark_version="${SPARK_VERSION}" \
       -f docker/spark-worker/Dockerfile \
-      -t spark-worker:${SPARK_VERSION} .
+      -t w3s/spark-worker:${SPARK_VERSION} .
 
   fi
 
@@ -132,7 +132,7 @@ function buildImages() {
       --build-arg jupyterlab_version="${JUPYTERLAB_VERSION}" \
       --build-arg scala_kernel_version="${SCALA_KERNEL_VERSION}" \
       -f docker/jupyterlab/Dockerfile \
-      -t jupyterlab:${JUPYTERLAB_VERSION}-spark-${SPARK_VERSION} .
+      -t w3s/jupyterlab:${JUPYTERLAB_VERSION}-spark-${SPARK_VERSION} .
   fi
 
 }

@@ -8,7 +8,7 @@ ARG build_date
 LABEL org.label-schema.build-date=${build_date}
 LABEL org.label-schema.name="Apache Spark Standalone Cluster on Docker - JupyterLab Image"
 LABEL org.label-schema.description="JupyterLab image"
-LABEL org.label-schema.url="https://github.com/andre-marcos-perez/spark-cluster-on-docker"
+LABEL org.label-schema.url="https://github.com/akuehlka/spark-standalone-cluster-on-docker.git"
 LABEL org.label-schema.schema-version="1.0"
 
 # -- Layer: Notebooks and data

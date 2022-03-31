@@ -9,7 +9,7 @@ ARG build_date
 LABEL org.label-schema.build-date=${build_date}
 LABEL org.label-schema.name="Apache Spark Standalone Cluster on Docker - Cluster Base Image"
 LABEL org.label-schema.description="Cluster base image shipped with Python, Scala and a shared workspace folder"
-LABEL org.label-schema.url="https://github.com/andre-marcos-perez/spark-cluster-on-docker"
+LABEL org.label-schema.url="https://github.com/akuehlka/spark-standalone-cluster-on-docker.git"
 LABEL org.label-schema.schema-version="1.0"
 
 # -- Layer: OS + Python + Scala
